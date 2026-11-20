@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Inlämmningsuppgift.1-Databashantering")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ea01bf1be52dd5bffa216e710913879e502a2af")]
 [assembly: System.Reflection.AssemblyProductAttribute("Inlämmningsuppgift.1-Databashantering")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Inlämmningsuppgift.1-Databashantering")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

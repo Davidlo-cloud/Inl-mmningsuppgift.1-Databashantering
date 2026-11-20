@@ -1,22 +1,22 @@
 CREATE TABLE Suppliers(
     SupplierId INTEGER PRIMARY KEY,
-    Name VARCHAR(30) NOT NULL,
-    Adress VARCHAR(40) NOT NULL,
-    Contact VARCHAR(100) NOT NULL,
-    Phone VARCHAR(15) NOT NULL,
-    Email VARCHAR(128) NOT NULL UNIQUE
+    Name TEXT NOT NULL,
+    Adress TEXT NOT NULL,
+    Contact TEXT NOT NULL,
+    Phone TEXT NOT NULL,
+    Email TEXT NOT NULL UNIQUE
 );
 
 CREATE TABLE Ingredients(
     IngredientId INTEGER PRIMARY KEY,
-    Name VARCHAR(20) NOT NULL
+    Name TEXT NOT NULL
 );
 
 CREATE TABLE SupplierIngredient(
     SupplierIngredientId INTEGER PRIMARY KEY,
     SupplierId INTEGER NOT NULL,
     IngredientId INTEGER NOT NULL,
-    ArticleNumber VARCHAR(15) NOT NULL,
+    ArticleNumber TEXT NOT NULL,
     PricePerKg FLOAT NOT NULL,
 
     CONSTRAINT fk_supplierid FOREIGN KEY(SupplierId) REFERENCES Suppliers(SupplierId),
@@ -26,7 +26,7 @@ CREATE TABLE SupplierIngredient(
 CREATE TABLE Purchases(
     PurchaseId INTEGER PRIMARY KEY,
     SupplierId INTEGER NOT NULL,
-    PurchaseDate VARCHAR(12) NOT NULL,
+    PurchaseDate TEXT NOT NULL,
 
     CONSTRAINT fk_purchase_supplier FOREIGN KEY(SupplierId) REFERENCES Suppliers(SupplierId)
 );
